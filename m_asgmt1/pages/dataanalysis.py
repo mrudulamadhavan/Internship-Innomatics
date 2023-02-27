@@ -19,8 +19,8 @@ img = image.imread(IMAGE_PATH3)
 st.image(img)
 
 st.subheader(":green[Overview of Dataset]")
-DATA_PATH = os.path.join(dir_of_interest, "data", "Credit card transactions - India - Simple.csv")
-df = pd.read_csv('C://Users//Mrudula Madhavan//OneDrive//Desktop//Innomatics//m_asgmt1//resources//data//Credit card transactions - India - Simple.csv')
+DATA_PATH1 = os.path.join(dir_of_interest, "data", "Credit card transactions - India - Simple.csv")
+df = pd.read_csv(DATA_PATH1)
 df = df.drop(columns='index')
 st.dataframe(df.head(8))
 
