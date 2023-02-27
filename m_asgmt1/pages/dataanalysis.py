@@ -7,7 +7,7 @@ import plotly.express as px
 import os
 
 # absolute path to this file
-FILE_DIR = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//OneDrive//Desktop//Innomatics//m_asgmt1//pages//dataanalysis.py"))
+FILE_DIR = os.path.dirname(os.path.abspath("m_asgmt1/pages/dataanalysis.py"))
 # absolute path to this file's root directory
 PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 # absolute path of directory_of_interest
