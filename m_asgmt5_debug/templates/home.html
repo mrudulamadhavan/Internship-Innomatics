@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Note</title>
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}         
+        input[type='text']{display:block;  margin:0 auto;  padding:10px}  
+        button{display: block; margin: 0 auto}     
+               
+    </style>
+    <h1>BACKEND PROJECT 2</h1>
+</head>
+<body>
+    <h2><b>Debugging a Note Taking Application</b></h2>
+    <hr>    
+    <form action="" method="POST">        
+        <input type="text" name="note" placeholder="Enter a note">
+        <br>
+        <button>Add Note</button>
+        <hr>
+    </form>
+    <h3>Added Notes :</h3>
+    <ul>    
+    {% for note in notes %}
+        <li>{{ note }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

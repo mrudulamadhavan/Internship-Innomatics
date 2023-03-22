@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex101 Clone</title>
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        h5 {text-align: center;}        
+        p {text-align: center;}        
+    </style>
+    <h1>BACKEND PROJECT 1</h1>
+</head>
+<body>
+    <h2><b>Regex101 Clone</b></h2>
+    <h5> Enter a test string and a regex, display all matches with positions </h5>
+    <hr>
+    <form action="" method="POST">
+        <label>Enter Regular Expression : </label>
+        <input type="text" name="regex" value="{{regex}}">
+        <br><br>
+        <label>Enter Test String : </label>
+        <input type="text" name="string" value="{{string}}">
+        <br><br>
+        <button type="submit">Submit</button>        
+        <br>
+        <hr>
+        {% if count>0 %}
+            <p><h3>Result:</h3> {{ans}}
+            <h3>Total Matches:</h3> {{count}}
+            <h3>Match Positions: </h3>
+
+        {% for span in spans %}
+            {{span}}<br>
+        {% endfor %}
+
+        {% elif count==-1 %}
+        {% else %}
+            <p><h3>Result:</h3>Match Not Found!
+            <h3>Total Matches:</h3> {{count}}
+        {% endif %}
+        </p>
+    </form>
+    
+</body>
+</html>
