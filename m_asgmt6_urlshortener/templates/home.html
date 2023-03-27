@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<style>    
+h1 {text-align: center;}.content { max-width: 1200px;margin: auto; } 
+
+input[type=text] {
+  width: 60%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;   
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+</style><br><br><br>
+<center><h1>URL Shortener Web Application </h1></center><hr>
+<div class="center" >
+<form  style=" width: 80vw; margin-left : 25vw;" action="/" method="POST">    
+    <label >Enter the URL :</label>
+    <input type="text"  name="url" ><br><br> 
+    <button type='submit' class="btn btn-primary"  style = "cursor:pointer">Shorten the URL</button>
+</form><br><br>  
+
+{% if error==0 %} 
+<div style=" width: 60vw; margin-left : 25vw;">
+  <label >Shortened URL:</label>
+  <input type="text"  value="{{n}}" id="myInput" ><br><br>    
+  <button type='submit'  class="btn btn-success" onclick="url_func()" style= "cursor:pointer" > Copy URL</button>
+</div>     
+</div>  
+{% elif error == 1 %}
+  <div class="alert alert-danger" role="alert" style="position:fixed; left: 0px; width: 100%;">
+  <h1>Please enter a valid URL!</h1>
+  </div>
+{% endif %}
+
+<script>
+function url_func() 
+{
+  /* Get the text field */
+  var copy_text = document.getElementById("myInput");
+
+  /* Select the text field */
+  copy_text.select();
+  copy_text.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copy_text.value);
+  
+  /* Alert the copied text */
+  alert("Copied the text: " + copy_text.value);
+}
+</script>
+{% endblock %}
