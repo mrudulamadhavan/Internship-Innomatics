@@ -8,7 +8,7 @@ import plotly.express as px
 st.header(":blue[Features vs Price]")
 
 #resourses path
-FILE_DIR1 = os.path.dirname(os.path.abspath(__file__))
+FILE_DIR1 = os.path.dirname(os.path.abspath('m_asgmt7_laptop/pages/dataanalysis.py'))
 FILE_DIR = os.path.join(FILE_DIR1,os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 DATA_PATH = os.path.join(dir_of_interest, "data")
