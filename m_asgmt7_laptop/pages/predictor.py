@@ -17,7 +17,7 @@ st.title("Laptop Price Predictor 💻")
 
 # C:\Users\Mrudula Madhavan\OneDrive\Desktop\Innomatics\m_asgmt7_laptop\Resources\data\laptop_price.csv
 #resources path
-FILE_DIR1 = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//OneDrive//Desktop//Innomatics//m_asgmt7_laptop//pages//predictor.py"))
+FILE_DIR1 = os.path.dirname(os.path.abspath("m_asgmt7_laptop/pages/predictor.py"))
 FILE_DIR = os.path.join(FILE_DIR1,os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 DATA_PATH = os.path.join(dir_of_interest, "data")
