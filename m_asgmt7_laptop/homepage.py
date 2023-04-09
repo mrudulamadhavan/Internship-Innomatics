@@ -8,7 +8,7 @@ st.header(":blue[Laptop Price Predictor Application :desktop_computer]")
 
 
 #Adding Image
-FILE_DIR = os.path.dirname(os.path.abspath('C://Users//Mrudula Madhavan//OneDrive//Desktop//Innomatics//m_asgmt7_laptop//homepage.py'))
+FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt7_laptop/homepage.py'))
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 IMAGE_PATH = os.path.join(dir_of_interest, "images")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "pic1.jpg")
