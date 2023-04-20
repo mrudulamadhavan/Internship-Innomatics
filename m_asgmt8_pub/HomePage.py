@@ -8,7 +8,7 @@ st.header("🥂🍻🥂 :blue[ Pub Locator Application 🥂🍻🥂]")
 
 
 #Adding Image
-FILE_DIR = os.path.dirname(os.path.abspath('C://Users//Mrudula Madhavan//Desktop//Innomatics//m_asgmt8_pub//HomePage.py'))
+FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt8_pub//HomePage.py'))
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 IMAGE_PATH = os.path.join(dir_of_interest, "images")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "pubhome.jpg")
