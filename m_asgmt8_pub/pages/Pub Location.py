@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Pub Locations"
 )
 
-FILE_DIR = os.path.dirname(os.path.abspath('C://Users//Mrudula Madhavan//Desktop//Innomatics//m_asgmt8_pub//HomePage.py'))
+FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt8_pub//HomePage.py'))
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 DATA_PATH = os.path.join(dir_of_interest, "data", "open_pubs_new.csv")
 df = pd.read_csv(DATA_PATH,index_col=False)
