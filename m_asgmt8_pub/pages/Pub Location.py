@@ -18,13 +18,20 @@ df = df[['fsa_id', 'name', 'address', 'postcode', 'easting', 'northing',
 # make header
 
 st.header(" 🍷 :blue[Pub Locations in UK] 🍷")
-# enter either postal code or local authority
 
-local_auth = st.selectbox('Choose a Local Authority :', set(df['local_authority']))
-button_1 = st.button("Submit")
-
-if button_1:
+button1= st.button('Local Authority')
+button2 = st.button('Postal Code')
+st.write("------------------------------------------------------------------------------------------------")
+if button1:
+    local_auth = st.selectbox('Choose a Local Authority :', set(df['local_authority']))
     df_new = df.loc[(df['local_authority'] == local_auth)]
+    st.write("Pubs in this area: ")
+    st.dataframe(df_new.reset_index(drop=True))
+    st.map(df_new)
+
+if button2:
+    post_code = st.selectbox('Choose a Postal Code :', set(df['postcode']))
+    df_new = df.loc[(df['postcode'] == post_code)]
     st.write("Pubs in this area: ")
     st.dataframe(df_new.reset_index(drop=True))
     st.map(df_new)
