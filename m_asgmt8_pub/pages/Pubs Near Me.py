@@ -17,7 +17,11 @@ df = df[['fsa_id', 'name', 'address', 'postcode', 'easting', 'northing',
 # make header
 st.header("🍸🍷 :blue[ Pub Locator ] 🍸🍷")
 
-st.write(" >> Current Location Details :")
+st.write('How many nearby pubs you look for :')
+n = st.slider("",1, 20)
+st.write('Number of Pubs selected :',n)
+
+st.subheader(" Current Location Details :")
 lat = st.number_input('Latitude :')
 lon = st.number_input('Longitude :')
 button = st.button("Submit")
@@ -26,16 +30,17 @@ new_points = np.array([lat, lon])
 # Calculate distance between new_points and all points in df_new
 distances = np.sqrt(np.sum((new_points - df_new)**2, axis = 1))
 distances = pd.Series(distances, name="min_distance")
+
 st.write("-----------------------------------------------------------------------------------------")
 
 # sort the array using arg partition and keep n elements
-n = 5
+# n = 5
+
 min_indices = np.argpartition(distances,n-1)[:n]
 
 if button:
-    st.write(" >> :black[ Pubs Near Me :]")
+    st.subheader(" :black[ Pubs Near Me :]")
     st.dataframe(df.iloc[min_indices].reset_index(drop=True))    
     st.map(df.iloc[min_indices])
-    st.write(">> Minimum distances to each Pub :")
-    st.dataframe(distances.head(5).reset_index(drop=True))
-    
+    st.write(">> Minimum distances to each Pub :")    
+    st.dataframe(distances.head(n).reset_index(drop=True))
