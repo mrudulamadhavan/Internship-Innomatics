@@ -50,19 +50,19 @@ with right_column:
 
 left_column, middle_column, right_column = st.columns(3)
 with left_column:
-    carat = st.text_input("Weight / Carat (0.2 to 5.01) ",value=0.0) 
+    carat = st.text_input("Weight / Carat  ",value=0.0) 
 with middle_column:
-    depth = st.text_input("Depth percentage (43 to 79) ",value=0)
+    depth = st.text_input("Depth percentage ",value=0)
 with right_column:
-    table = st.text_input("Table Percentage  (43 to 95)",value=0)
+    table = st.text_input("Table Percentage  ",value=0)
 
 left_column,middle_column, right_column = st.columns(3)
 with left_column:
-    x = st.number_input("Length in mm (0 to 10.74)")
+    x = st.number_input("Length in mm ")
 with middle_column:
-    y = st.number_input("Width in mm (0 to 58.9)")
+    y = st.number_input("Width in mm ")
 with right_column:
-    z = st.number_input("Depth in mm (0 to 31.8)")
+    z = st.number_input("Depth in mm )")
 price = ""
 
 
