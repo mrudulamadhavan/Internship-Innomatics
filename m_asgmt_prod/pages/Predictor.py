@@ -18,7 +18,7 @@ st.set_page_config(page_title="Diamond Price Predictor",layout="wide")
 
 
 # absolute path to this file
-FILE_DIR = os.path.dirname(os.path.abspath("C://Users//Mrudula Madhavan//Desktop//Innomatics//MLOps//m_asgmt_prod//pages//Predictor.py"))
+FILE_DIR = os.path.dirname(os.path.abspath("m_asgmt_prod/pages/Predictor.py"))
 # absolute path to this file's root directory
 PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 # absolute path of directory_of_interest
