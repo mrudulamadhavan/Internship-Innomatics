@@ -39,6 +39,8 @@ def prediction(cut,color,clarity,x,y,z,carat,depth,table):
 
 
 st.subheader("Enter the Diamond details :")
+img = image.imread('m_asgmt_prod/resources/images/dia3.jpg')
+st.image(img)
 
 left_column,middle_column, right_column = st.columns(3)
 with left_column:  
