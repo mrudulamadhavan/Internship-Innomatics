@@ -5,11 +5,11 @@ import pandas as pd
 import os
 
 #Adding Image
-FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt_prod/pages/About.py'))
-dir_of_interest = os.path.join(FILE_DIR, "resources")
-IMAGE_PATH = os.path.join(dir_of_interest, "images", "dia1.jpg")
+# FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt_prod/pages/About.py'))
+# dir_of_interest = os.path.join(FILE_DIR, "resources")
+# IMAGE_PATH = os.path.join(dir_of_interest, "images", "dia1.jpg")
 
-img = image.imread(IMAGE_PATH)
+img = image.imread('m_asgmt_prod/resources/images/dia1.jpg')
 st.image(img)
 
 
