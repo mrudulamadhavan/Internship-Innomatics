@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 #Adding Image
-FILE_DIR = os.path.dirname(os.path.abspath('C://Users//Mrudula Madhavan//Desktop//Innomatics//MLOps//m_asgmt_prod//About.py'))
+FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt_prod/pages/About.py'))
 dir_of_interest = os.path.join(FILE_DIR, "resources")
 IMAGE_PATH = os.path.join(dir_of_interest, "images")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "dia1.jpg")
