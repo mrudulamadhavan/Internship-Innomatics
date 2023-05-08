@@ -29,7 +29,9 @@ df= pd.read_csv(DATA_PATH)
 df1=df.copy()
 
 
-xgb = pickle.load(open('m_asgmt_prod/diamond.pkl','rb'))
+# xgb = pickle.load(open('m_asgmt_prod/diamond.pkl','rb'))
+scaler = pickle.load(open('m_asgmt_prod/models/standard_scaler.pkl','rb'))
+xgb = pickle.load(open('m_asgmt_prod/models/xgb_model.pkl','rb'))
 
 
 def prediction(cut,color,clarity,x,y,z,carat,depth,table):
