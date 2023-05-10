@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1683701608022
+current_stage: Staging
+description: ''
+last_updated_timestamp: 1683702490631
+name: Gender prediction
+run_id: c9633eeb7eba43f1a35c2cda1ac5f92e
+run_link: ''
+source: mlflow-artifacts:/385426064880880178/c9633eeb7eba43f1a35c2cda1ac5f92e/artifacts/models
+status: READY
+status_message: null
+user_id: null
+version: 4
