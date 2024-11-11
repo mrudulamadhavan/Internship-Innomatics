@@ -4,8 +4,8 @@ from matplotlib import image
 import os
 
 #Title of the home page
-st.header(":blue[Laptop Price Predictor Application :desktop_computer]")
-
+st.header(":blue[Laptop Price Predictor Application]")
+# st.header(":blue[Laptop Price Predictor Application :desktop_computer]")
 
 #Adding Image
 FILE_DIR = os.path.dirname(os.path.abspath('m_asgmt7_laptop/homepage.py'))
