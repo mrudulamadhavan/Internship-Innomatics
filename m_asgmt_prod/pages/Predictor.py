@@ -39,10 +39,9 @@ def prediction(cut,color,clarity,x,y,z,carat,depth,table):
     print(prediction)
     return prediction
 
-img = image.imread('m_asgmt_prod/resources/images/dia3.png')
-st.image(img)
 
-st.markdown("""<p style="text-align: center; font-weight: bold; font-size: 20px;">⚡ <em>Price a diamond. Instantly. Intelligently.</em></p>""", unsafe_allow_html=True)
+
+st.markdown("""<p style="text-align: center; font-weight: bold; font-size: 24px;">⚡ <em>Price a diamond. Instantly. Intelligently.</em></p>""", unsafe_allow_html=True)
 
 
 st.subheader("Enter the Diamond details :")
@@ -157,8 +156,11 @@ sample['color']=sample['color'].apply(color_fn)
 sample=sample.values
 sample=std_fit.transform(sample)
 
+img = image.imread('m_asgmt_prod/resources/images/dia3.png')
+st.image(img,caption="Diamond Specifications", use_column_width=False)
+
 #Prediction
-if st.button('Predict Price'):
+if st.button(' ✨ Predict Price'):
     price=xgb.predict(sample)
     price=price[0].round(2)    
     st.subheader(":blue[The Predicted Price is :] :green[{}]".format("$ "+str(price)))
