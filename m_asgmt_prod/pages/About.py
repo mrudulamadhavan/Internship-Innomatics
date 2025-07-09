@@ -13,10 +13,8 @@ import os
 # Diamond Price Predictor Header
 st.markdown("<h1 style='text-align: center; color: brown;'>💎 Diamond Price Predictor</h1>", unsafe_allow_html=True)
 
-st.markdown("#### 📖 About the Project")
-st.markdown("""
-**Ever wondered what your diamond is really worth?**  
-This app uses **machine learning** to predict diamond prices based on key features like:
+st.markdown("#### **Ever wondered what your diamond is really worth?** ")
+st.markdown("""This app uses **machine learning** to predict diamond prices based on key features like:
 
 - 💠 **Carat** (weight)  
 - ✂️ **Cut** (quality)  
