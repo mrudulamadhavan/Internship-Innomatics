@@ -3,7 +3,9 @@ from matplotlib import image
 import os
 
 #Title of the home page
-st.header(":blue[Diamond Price Predictor Application ]")
+st.markdown("<h1 style='text-align: center; color: blue;'>💎 Diamond Price Predictor</h1>", 
+            unsafe_allow_html=True)
+
 
 
 #Adding Image
@@ -13,7 +15,7 @@ IMAGE_PATH = os.path.join(dir_of_interest, "images")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "dia2.jpg")
 
 img = image.imread(IMAGE_PATH1)
-st.image(img)
+st.image(img, width=300)
 
 #Using subheader
 st.write('By: :green[Mrudula A P]')
