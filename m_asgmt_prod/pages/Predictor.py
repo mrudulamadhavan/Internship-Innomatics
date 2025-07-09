@@ -49,7 +49,7 @@ st.markdown("<h5 style='text-align: left; font-weight: bold;'>Enter the diamond 
 img = image.imread('m_asgmt_prod/resources/images/dia3.png')
 # Center image with container trick
 st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-st.image(img, caption="Diamond Specifications", width=900)
+st.image(img, caption="Diamond Specifications", width=700)
 st.markdown("</div>", unsafe_allow_html=True)
 
 left_column,middle_column, right_column = st.columns(3)
