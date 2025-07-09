@@ -45,13 +45,12 @@ st.markdown("""<p style="text-align: center; font-weight: bold; font-size: 28px;
 
 
 st.markdown("<h5 style='text-align: left; font-weight: bold;'>Enter the diamond specifications :</h5>", unsafe_allow_html=True)
+
 img = image.imread('m_asgmt_prod/resources/images/dia3.png')
-st.markdown(f"""
-<div style="text-align: center;">
-    <img src="{img}" width="600">
-    <p style="text-align:center;">Diamond Specifications</p>
-</div>
-""", unsafe_allow_html=True)
+# Center image with container trick
+st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+st.image(img, caption="Diamond Specifications", width=600)
+st.markdown("</div>", unsafe_allow_html=True)
 
 left_column,middle_column, right_column = st.columns(3)
 with left_column:  
