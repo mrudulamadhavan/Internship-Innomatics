@@ -33,7 +33,7 @@ st.image(img_path, width=400, caption="Diamond Anatomy", use_column_width=False)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown("### ⚙️ Built Using")
+    st.markdown("#### ⚙️ Built Using")
     st.markdown("""
     - Python  
     - Pandas  
@@ -44,7 +44,7 @@ with col1:
     """)
 
 with col2:
-    st.markdown("### 💡 Use Cases")
+    st.markdown("#### 💡 Use Cases")
     st.markdown("""
     - Buyers & sellers verifying diamond value  
     - Jewelers pricing inventory  
@@ -52,5 +52,5 @@ with col2:
     """)
 
 with col3:
-    st.markdown("### 📈 Model Accuracy")
+    st.markdown("#### 📈 Model Accuracy")
     st.markdown(""" - 98.05% R² (Random Forest)""")
