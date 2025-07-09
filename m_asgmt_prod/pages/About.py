@@ -13,9 +13,8 @@ import os
 st.markdown("<h1 style='text-align: center;'>💎 Diamond Price Predictor</h1>", unsafe_allow_html=True)
 
 st.markdown("### 📖 About the Project")
-st.markdown("""
-> **Ever wondered what your diamond is really worth?**  
-This app uses **machine learning** to predict diamond prices based on key features like:
+st.markdown("""**Ever wondered what your diamond is really worth?**)  
+st.markdown("""This app uses **machine learning** to predict diamond prices based on key features like:
 
 - 💠 **Carat** (weight)  
 - ✂️ **Cut** (quality)  
@@ -40,8 +39,7 @@ with col1:
     - Random Forest  
     - Streamlit
 
-    📈 **Best Model Accuracy**:  
-    **98.05% R² (Random Forest)**
+    
     """)
 
 with col2:
@@ -51,4 +49,6 @@ with col2:
     - Jewelers pricing inventory  
     - ML learners exploring regression use-cases  
     """)
+    st.markdown("### 📈 **Best Model Accuracy**:")  
+    st.markdown("""**98.05% R² (Random Forest)**""")
  
