@@ -41,12 +41,12 @@ def prediction(cut,color,clarity,x,y,z,carat,depth,table):
 
 
 
-st.markdown("""<p style="text-align: center; font-weight: bold; font-size: 24px;">⚡ <em>Price a diamond. Instantly. Intelligently.</em></p>""", unsafe_allow_html=True)
+st.markdown("""<p style="text-align: center; font-weight: bold; font-size: 28px;">⚡ <em>Price a diamond. Instantly. Intelligently.</em></p>""", unsafe_allow_html=True)
 
 
 st.markdown("<h5 style='text-align: left; font-weight: bold;'>Enter the diamond specifications :</h5>", unsafe_allow_html=True)
 img = image.imread('m_asgmt_prod/resources/images/dia3.png')
-st.image(img,caption="Diamond Specifications", use_column_width=False)
+st.image(img,caption="Diamond Specifications", use_container_width=False)
 
 left_column,middle_column, right_column = st.columns(3)
 with left_column:  
