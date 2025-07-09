@@ -21,7 +21,7 @@ img = image.imread(IMAGE_PATH1)
 
 # Center image with container trick
 
-st.image(img, width=700)
+st.image(img, width=900)
 
 
 
