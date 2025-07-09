@@ -55,4 +55,4 @@ with col3:
     st.markdown("#### 📈 Model Accuracy")
     st.markdown(""" - 98.05% R² (Random Forest)""")
 
-<p style='text-align: right; font-size: 18px;'>✨ <em>Smart pricing for sparkling stones.</em></p>
+st.markdown("""<p style='text-align: right; font-size: 18px;'>✨ <em>Smart pricing for sparkling stones.</em></p>""", unsafe_allow_html=True)
