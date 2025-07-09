@@ -20,9 +20,9 @@ IMAGE_PATH1 = os.path.join(IMAGE_PATH, "dia2.jpg")
 img = image.imread(IMAGE_PATH1)
 
 # Center image with container trick
-st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+
 st.image(img, width=700)
-st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 #Using subheader
