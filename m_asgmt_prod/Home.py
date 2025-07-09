@@ -15,7 +15,10 @@ IMAGE_PATH = os.path.join(dir_of_interest, "images")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "dia2.jpg")
 
 img = image.imread(IMAGE_PATH1)
-st.image(img)
+# Center image with container trick
+st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+st.image(img, width=600)
+st.markdown("</div>", unsafe_allow_html=True)
 
 #Using subheader
 st.write('By: :green[Mrudula A P]')
