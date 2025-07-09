@@ -27,7 +27,7 @@ This app uses **machine learning** to predict diamond prices based on key featur
 
 # Load and display image (adjust the path as needed)
 img_path = 'm_asgmt_prod/resources/images/dia1.jpg'
-st.image(img_path, width=400, caption="Diamond Anatomy", use_column_width=False)
+st.image(img_path, width=400, caption="Diamond Anatomy",  use_container_width=False)
 
 # Three-column layout
 col1, col2, col3 = st.columns(3)
