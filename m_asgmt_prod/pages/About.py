@@ -27,7 +27,7 @@ img = image.imread('m_asgmt_prod/resources/images/dia1.jpg')
 st.image(img)
 
 # Two-column layout
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### ⚙️ Built Using")
@@ -49,6 +49,7 @@ with col2:
     - Jewelers pricing inventory  
     - ML learners exploring regression use-cases  
     """)
+with col3:
     st.markdown("### 📈 **Best Model Accuracy**:")  
     st.markdown("""**98.05% R² (Random Forest)**""")
  
