@@ -10,11 +10,13 @@ import os
 # IMAGE_PATH = os.path.join(dir_of_interest, "images", "dia1.jpg")
 
 # Diamond Price Predictor Header
-st.markdown("<h1 style='text-align: center;'>💎 Diamond Price Predictor</h1>", unsafe_allow_html=True)
+# Diamond Price Predictor Header
+st.markdown("<h1 style='text-align: center; color: blue;'>💎 Diamond Price Predictor</h1>", unsafe_allow_html=True)
 
 st.markdown("### 📖 About the Project")
-st.markdown("""**Ever wondered what your diamond is really worth?**)  
-st.markdown("""This app uses **machine learning** to predict diamond prices based on key features like:
+st.markdown("""
+**Ever wondered what your diamond is really worth?**  
+This app uses **machine learning** to predict diamond prices based on key features like:
 
 - 💠 **Carat** (weight)  
 - ✂️ **Cut** (quality)  
@@ -23,10 +25,11 @@ st.markdown("""This app uses **machine learning** to predict diamond prices base
 - 📐 **Dimensions** *(x, y, z)*  
 """)
 
-img = image.imread('m_asgmt_prod/resources/images/dia1.jpg')
-st.image(img)
+# Load and display image (adjust the path as needed)
+img_path = 'm_asgmt_prod/resources/images/dia1.jpg'
+st.image(img_path, width=400, caption="Diamond Image", use_column_width=False)
 
-# Two-column layout
+# Three-column layout
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -37,9 +40,7 @@ with col1:
     - Scikit-learn  
     - XGBoost  
     - Random Forest  
-    - Streamlit
-
-    
+    - Streamlit  
     """)
 
 with col2:
@@ -49,7 +50,7 @@ with col2:
     - Jewelers pricing inventory  
     - ML learners exploring regression use-cases  
     """)
+
 with col3:
-    st.markdown("### 📈 **Best Model Accuracy**:")  
-    st.markdown("""**98.05% R² (Random Forest)**""")
- 
+    st.markdown("### 📈 Best Model Accuracy")
+    st.markdown("**98.05% R² (Random Forest)**")
