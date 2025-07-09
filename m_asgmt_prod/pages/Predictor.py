@@ -42,7 +42,7 @@ def prediction(cut,color,clarity,x,y,z,carat,depth,table):
 img = image.imread('m_asgmt_prod/resources/images/dia3.png')
 st.image(img)
 
-<p style='text-align: right; font-size: 18px;'>⚡ <em>Price a diamond. Instantly. Intelligently.</em></p>
+st.markdown("""<p style='text-align: right; font-size: 24px;'>⚡ <em>Price a diamond. Instantly. Intelligently.</em></p>""", unsafe_allow_html=True)
 
 
 st.subheader("Enter the Diamond details :")
