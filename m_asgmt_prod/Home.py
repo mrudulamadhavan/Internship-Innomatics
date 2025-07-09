@@ -3,7 +3,7 @@ from matplotlib import image
 import os
 
 #Title of the home page
-st.markdown("<h1 style='text-align: center; color: blue;'>💎 Diamond Price Predictor</h1>", 
+st.markdown("<h1 style='text-align: center; color: brown;'>💎 Diamond Price Predictor</h1>", 
             unsafe_allow_html=True)
 
 
@@ -15,7 +15,7 @@ IMAGE_PATH = os.path.join(dir_of_interest, "images")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "dia2.jpg")
 
 img = image.imread(IMAGE_PATH1)
-st.image(img, width=300)
+st.image(img)
 
 #Using subheader
 st.write('By: :green[Mrudula A P]')
