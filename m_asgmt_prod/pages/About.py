@@ -13,7 +13,7 @@ import os
 # Diamond Price Predictor Header
 st.markdown("<h1 style='text-align: center; color: brown;'>💎 Diamond Price Predictor</h1>", unsafe_allow_html=True)
 
-st.markdown("### 📖 About the Project")
+st.markdown("#### 📖 About the Project")
 st.markdown("""
 **Ever wondered what your diamond is really worth?**  
 This app uses **machine learning** to predict diamond prices based on key features like:
@@ -24,7 +24,7 @@ This app uses **machine learning** to predict diamond prices based on key featur
 - 🔍 **Clarity**  
 - 📐 **Dimensions** *(x, y, z)*  
 """)
-
+st.write("")
 # Load and display image (adjust the path as needed)
 img_path = 'm_asgmt_prod/resources/images/dia1.jpg'
 st.image(img_path,caption="Diamond Anatomy",  use_container_width=False)
