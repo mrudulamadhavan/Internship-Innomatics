@@ -9,22 +9,46 @@ import os
 # dir_of_interest = os.path.join(FILE_DIR, "resources")
 # IMAGE_PATH = os.path.join(dir_of_interest, "images", "dia1.jpg")
 
+# Diamond Price Predictor Header
+st.markdown("<h1 style='text-align: center;'>💎 Diamond Price Predictor</h1>", unsafe_allow_html=True)
+
+st.markdown("### 📖 About the Project")
+st.markdown("""
+> **Ever wondered what your diamond is really worth?**  
+This app uses **machine learning** to predict diamond prices based on key features like:
+
+- 💠 **Carat** (weight)  
+- ✂️ **Cut** (quality)  
+- 🌈 **Color**  
+- 🔍 **Clarity**  
+- 📐 **Dimensions** *(x, y, z)*  
+""")
+
 img = image.imread('m_asgmt_prod/resources/images/dia1.jpg')
 st.image(img)
 
+# Two-column layout
+col1, col2 = st.columns(2)
 
-st.write("* price - price in US dollars (\$326 to \$18,823)")
+with col1:
+    st.markdown("### ⚙️ Built Using")
+    st.markdown("""
+    - Python  
+    - Pandas  
+    - Scikit-learn  
+    - XGBoost  
+    - Random Forest  
+    - Streamlit
 
-st.write("* carat  - weight of the diamond (0.2 to 5.01)")
-st.write("* cut - quality of the cut (Fair, Good, Very Good, Premium, Ideal)")
-st.write("* color - diamond colour, from J (worst) to D (best)")
-st.write("* clarity - a measurement of how clear the diamond is .")
-st.write(" >>  I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best) ")
+    📈 **Best Model Accuracy**:  
+    **98.05% R² (Random Forest)**
+    """)
 
-st.write("* x - length in mm (0 to 10.74)")
-st.write("* y - width in mm (0 to 58.9)")
-st.write("* z - depth in mm (0 to 31.8)")
-
-st.write("* depth - total depth percentage (43 to 79)")
-st.write(" >>  depth = z / mean(x, y) = 2 * z / (x + y) ")
-st.write("* table - width of top of diamond relative to widest point (43 to 95)")
+with col2:
+    st.markdown("### 💡 Use Cases")
+    st.markdown("""
+    - Buyers & sellers verifying diamond value  
+    - Jewelers pricing inventory  
+    - ML learners exploring regression use-cases  
+    """)
+ 
